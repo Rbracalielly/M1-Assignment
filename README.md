@@ -1,3 +1,3 @@
 ## M1-Assignment
 M1-Assignment
-This is a learning tutirual for my Repo
+This is a learning tutorial for my repo
