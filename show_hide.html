@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <style>
+  </style>
+    <title>Show/Hide</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+          $("#hide").click(function(){
+            $("p").hide();
+          });
+          $("#show").click(function() {
+            $("p").show();
+          });
+        });
+    </script>
+
+</head>
+  <body>
+    <p>Hiding/Not Hiding</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+  </body>
+</html>
