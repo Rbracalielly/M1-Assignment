@@ -3,27 +3,27 @@
 <head>
   <style>
     h1 {
-      color: darkgreen;
+      color: #1E90FF;
       font-style: bold;
       font-size: 25px;
     }
     h2 {
-      color: darkgreen;
+      color: #1E90FF;
       font-style: bold;
       font-size: 20px;
     }
     h3 {
-      color: green;
+      color: #1E90FF;
       font-style: bold;
       font-size: 18px;
     }
     h4 {
-      color: green;
+      color: #1E90FF;
       font-style: bold;
       font-size: 16px;
     }
     h5 {
-      color: green;
+      color: #1E90FF;
       font-style: bold;
       font-size: 14px;
     }
@@ -37,6 +37,50 @@
       margin: 3;
       padding: 3;
     }
+    <style>
+      .dropbtn {
+        background-color: #1E90FF;
+        color: white;
+        padding: 16px;
+        font-size: 16px:
+        border: none;
+        cursor: pointer;
+      }
+
+      .dropdown{
+        postion: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        postion: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+        .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+
+      .dropdown-content a:hover {
+        background-color: #flflfl;
+        }
+
+      .dropdown:hover .dropdown-content{
+        display: block;
+        }
+
+      .dropdown:hover .dropbtn{
+        background-color: white;
+        }
+
+    </style>
 </style>
 <title>Ryan Bracalielly - PointPark Information Technology Senor</title>
 </head>
@@ -48,30 +92,21 @@
 <header>
   <img src="images/websiteimage.jpg">
   <section class="profileHeader">
-    <h1>Ryan Bracalielly</h1>
-    <h2>PointPark Information Technology Senor and Technical Support Engineer Level 3 for Teletracking Technologies</h3>
+    <h1>Ryan Bracalielly: PointPark Information Technology Senor and Technical Support Engineer Level 3 for Teletracking Technologies</h1>
+    <h2>About Me</h3>
     <hr>
     <div>
       <p>My Name is Ryan Bracalielly and nice to meet you. I live in Pittsburgh Pennsylvania and have been living here most of life. I am a senior at Pont Park University, and I will be graduating April 2020. I currently work for a company in the city of Pittsburgh by the name of Teletracking where I am level 3 technical support engineer.</p>
       <p>My Schedule for my last 16 weeks of class consist of the following class:</p>
-      <table>
-        <tr>
-            <td><p>CMPS 262 O A ON	Advanced Programming</p>
-            <td><p>1/4/2020 - 2/28/2020</p>
-        </tr>
-        <tr>
-            <td><p>PADM 210 O A ON	Public Administration</p>
-            <td><p>1/4/2020 - 2/28/2020</p>
-        </tr>
-        <tr>
-            <td><p>CMPS 480 O A ON	Senior Project</p>
-            <td><p>2/29/2020 - 4/24/2020</p>
-        </tr>
-        <tr>
-            <td><p>MKTS 205 O A ON	Principles of Marketing</p>
-            <td><p>2/29/2020 - 4/24/2020</p>
-        </tr>
-      </table>
+      <div class="dropdown">
+        <button class="dropbtn">Hover Here To See My Classes</button>
+          <div class="dropdown-content">
+            <a href="#">CMPS 262 O A ON	Advanced Programming</a>
+            <a href="#">PADM 210 O A ON	Public Administration</a>
+            <a href="#">CMPS 480 O A ON	Senior Project</a>
+            <a href="#">MKTS 205 O A ON	Principles of Marketing</a>
+          </div> <!--dropdowncontent-->
+      </div> <!--dropbtn-->
     </div>
   <!-- Contact details -->
   <section class="section1">
@@ -126,23 +161,4 @@
   <p class="footerNote">Ryan Bracalielly</p>
 </footer>
 </body>
-<div data-role="page" id="page1">
-  <div data-role="header">
-    <h1>Ryan Bracalielly - PointPark Information Technology Senor</h1>
-  </div> <!--header-->
-    <div data-role="main" class="ui-content"
-    </div> <!--main-->
-
-<div data-role="footer">
-  <div data-role="navbar">
-    <ul>
-      <li><a href="index">Home</a></li>
-      <li><a href="photos">Photos</a></li>
-      <li><a href="classes">Classes</a></li>
-      <li><a href="hobbes">How To Contact Me</a></li>
-      <li><a href="work">Work Experience</a></li>
-    </ul>
-  </div> <!--navbar-->
-</div> <!--footer-->
-</div> <!--page-->
 </html>
