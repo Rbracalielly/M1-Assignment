@@ -84,15 +84,30 @@
 </style>
 <title>Ryan Bracalielly - PointPark Information Technology Senor</title>
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.css">
+
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+      function rgt() {
+        $('#sldr').animate({ left: "150" }, 1000, hider);
+        }
+        rgt();
+        function hider(){
+        $('#sldr').css('left', '0px');
+          rgt();
+        }
+    });
+
+</script>
+
+
 </head>
-<link rel="stylesheet" href="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.css">
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
 <body>
 <header>
-  <img src="images/websiteimage.jpg">
   <section class="profileHeader">
     <h1>Ryan Bracalielly: PointPark Information Technology Senor and Technical Support Engineer Level 3 for Teletracking Technologies</h1>
     <body>
@@ -117,6 +132,7 @@
     <h2>About Me</h3>
     <hr>
     <div>
+      <img src="images/websiteimage.jpg">
       <p>My Name is Ryan Bracalielly and nice to meet you. I live in Pittsburgh Pennsylvania and have been living here most of life. I am a senior at Pont Park University, and I will be graduating April 2020. I currently work for a company in the city of Pittsburgh by the name of Teletracking where I am level 3 technical support engineer.</p>
       <p>My Schedule for my last 16 weeks of class consist of the following class:</p>
       <div class="dropdown">
@@ -143,6 +159,11 @@
   <section class="section2">
     <h2 class="sectionTitle">Work Experience</h2>
     <hr class="sectionTitleRule">
+    <form id="form1" runat="server">
+      <div>
+        <img id="sldr" src="images/work.gif" style="position:absolute" />
+      </div>
+      </form>
     <!-- First Title & company details  -->
     <article class="section2Content">
       <h3 class="sectionContentTitle">Technical Support Engineer Level 3</h3>
