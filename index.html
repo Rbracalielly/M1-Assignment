@@ -103,6 +103,16 @@
     });
 
 </script>
+<script>
+    $(document).ready(function(){
+      $("#hide").click(function(){
+        $("#sldr").hide();
+      });
+      $("#show").click(function() {
+        $("#sldr").show();
+      });
+    });
+</script>
 
 
 </head>
@@ -163,6 +173,8 @@
       <div>
         <img id="sldr" src="images/work.gif" style="position:absolute" />
       </div>
+      <button id="hide">Stop Working</button>
+      <button id="show">Start Working</button>
       </form>
     <!-- First Title & company details  -->
     <article class="section2Content">
