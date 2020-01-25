@@ -1,7 +1,9 @@
 <!doctype html>
 <html>
 <head>
+
   <style>
+
     h1 {
       color: #1E90FF;
       font-style: bold;
@@ -81,17 +83,18 @@
         }
 
 
-
     </style>
 </style>
 <title>Ryan Bracalielly - PointPark Information Technology Senor</title>
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.css">
 
+
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+
+<!--slidding animation-->
 <script type="text/javascript">
     $(document).ready(function() {
       function rgt() {
@@ -105,6 +108,7 @@
     });
 
 </script>
+<!--slidding animation-->
 <script>
     $(document).ready(function(){
       $("#hide").click(function(){
@@ -116,6 +120,16 @@
     });
 </script>
 
+<!--enlarge/reduce-->
+<script>
+  $("button#enlarge").on("click", function(){
+    $("p.enlargeable").addClass("big");
+    });
+  $("button#reduce").on("click", function(){
+      $("p.enlargeable").removeClass("big");
+      });
+
+</script>
 
 </head>
 <body>
@@ -131,13 +145,22 @@
           </div> <!--main-->
 
       <div data-role="footer">
+         <!--navbar-->
         <div data-role="navbar">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="photos">Photos</a></li>
+            <li><a href="#photos">About Me</a></li>
+            <li><a href="#aboutme">Contact Me</a></li>
+            <li><a href="#contactme">Work Exp</a></li>
+            <li><a href="#OtherWork">Photos</a></li>
+          </ul>
+        </div> <!--navbar-->
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#slidedown.html">SlideDown Experiment</a></li>
+            <li><a href="enlarge_reduce.html">Enlarge/Reduce Elements Experiment</a></li>
             <li><a href="animatedgif.html">Animation Experiment</a></li>
             <li><a href="show_hide.html">Show/Hide Experiment</a></li>
-            <li><a href="enlarge_reduce.html">Enlarge/Reduce Elements Experiment</a></li>
           </ul>
         </div> <!--navbar-->
       </div> <!--footer-->
@@ -146,6 +169,12 @@
     <hr>
     <div>
       <img src="images/websiteimage.jpg">
+
+
+      <button id="enlarge">Need Larger Text Clck Here</button>
+      <button id="reduce">To Reduce The Text After Enlarging Click Here</button>
+
+
       <p>My Name is Ryan Bracalielly and nice to meet you. I live in Pittsburgh Pennsylvania and have been living here most of life. I am a senior at Pont Park University, and I will be graduating April 2020. I currently work for a company in the city of Pittsburgh by the name of Teletracking where I am level 3 technical support engineer.</p>
       <p>My Schedule for my last 16 weeks of class consist of the following class:</p>
       <div class="dropdown">
@@ -186,7 +215,7 @@
         </div>
       </form>
 
-      <p class="sectionContent">Conduct system testing events, accurately correcting and documenting noted errors or deficiencies.</p>
+      <p class="sectionContent enlargeable">Conduct system testing events, accurately correcting and documenting noted errors or deficiencies.</p>
       <p class="sectionContent">Plan and oversee all stages and logistics of installation and testing of new products and improvements to computer systems.</p>
       <p class="sectionContent">Test computer software/hardware using standard diagnostic tools andprocedures.</p>
       <p class="sectionContent">Assign duties, responsibilities, and spans of authority to Level 1 and Level 2 teams.</p>
