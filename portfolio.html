@@ -95,20 +95,48 @@ nav:after {
 }
 
 button {
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
+     width: 150px;
+     height: 50px;
+     border:none;
+     border:solid 2px tomato;
+     border-radius: 5px;
+     background: rgba(255, 255, 255,0);
+     font-size: 25px;
+     color: white;
+
+}
+
+button:hover {
+     background:white;
+     color:black;
 }
 
 
 </style>
+<!--hide and show-->
+<script>
+    $(document).ready(function(){
+      $("#hide").click(function(){
+        $("#sldr").hide();
+      });
+      $("#show").click(function() {
+        $("#sldr").show();
+      });
+    });
+</script>
+
+<!--Toggle-->
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").toggle();
+  });
+});
+</script>
 
 <div class="custom-padding">
   <nav>
-    <div class="logo">Ryan BRacalielly</div>
+    <div class="logo">Ryan Bracalielly</div>
 
     <ul class="menu-area">
       <li><a href="#">Home</a></li>
@@ -120,6 +148,9 @@ button {
 </div>
 
 <body>
+
+  <button id="show">Animation Code</button>
+
 
 </body>
 
