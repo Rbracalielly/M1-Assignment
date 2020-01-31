@@ -1,5 +1,7 @@
 
 <html>
+
+<!--formating CSS Start-->
 <style>
 * {
   margin: 0;
@@ -23,7 +25,7 @@ body {
 }
 
 .custom-padding{
-  padding-top: 25px;
+  padding-top: 20px;
 }
 
 nav {
@@ -59,7 +61,7 @@ nav {
   display: block;
   padding: 0 25px;
   font-size: 14px;
-  line-height: 45px;
+  line-height: 55px;
   position: relative;
   z-index: 1;
 }
@@ -96,24 +98,53 @@ nav:after {
 
 button {
      width: 150px;
-     height: 50px;
+     height: 70px;
      border:none;
-     border:solid 2px tomato;
      border-radius: 5px;
-     background: rgba(255, 255, 255,0);
+     background: #333;
      font-size: 25px;
      color: white;
+     display: block;
+     font-size: 14px;
+     font-weight: 300;
+     letter-spacing: 1px;
+     text-transform: uppercase;
 
 }
 
 button:hover {
-     background:white;
+     background:tomato;
      color:black;
+}
+
+#animation_button{
+  position: absolute;
+  left: 100px;
+  top: 200px;
+}
+#show_hide_button{
+  position: absolute;
+  left: 100px;
+  top: 275px;
+}
+#portfolio1_button{
+  position: absolute;
+  left: 100px;
+  top: 350px;
+}
+#portfolio2_button{
+  position: absolute;
+  left: 100px;
+  top: 425px;
 }
 
 
 </style>
-<!--hide and show-->
+<!--formating CSS end-->
+
+
+<!--hide and show start-->
+<!--
 <script>
     $(document).ready(function(){
       $("#hide").click(function(){
@@ -124,16 +155,21 @@ button:hover {
       });
     });
 </script>
+-->
+<!--Code No Longer use, leaving in case I ever want to add it back in-->
+<!--hide and show end-->
 
-<!--Toggle-->
+<!--Toggle Start-->
 <script>
 $(document).ready(function(){
-  $("button").click(function(){
+  $("#animation_button").click(function(){
     $("p").toggle();
   });
 });
 </script>
+<!--Toggle End-->
 
+<!--Navigation Start-->
 <div class="custom-padding">
   <nav>
     <div class="logo">Ryan Bracalielly</div>
@@ -146,10 +182,15 @@ $(document).ready(function(){
     </ul>
   </nav>
 </div>
+<!--Navigation End-->
 
 <body>
 
-  <button id="show">Animation Code</button>
+  <button id="animation_button">Animation Code</button>
+  <button id="show_hide_button">Show/Hide Code</button>
+  <button id="portfolio1_button">Portfolio Code P1</button>
+  <button id="portfolio2_button">Portfolio Code P2</button>
+
 
 
 </body>
