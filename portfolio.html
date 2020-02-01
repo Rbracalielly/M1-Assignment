@@ -1,0 +1,294 @@
+<html>
+<!--formating CSS Start-->
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(https://i.postimg.cc/8c2x6mR6/desktop.jpg);
+  -webkit-background-size:cover;
+  background-size:cover;
+  background-position: center center;
+  background-repeat: repeat;
+  background-attachment: scroll
+  height: 100vh;
+}
+.menu-area li a {
+  text-decoration: none;
+}
+
+.menu-area li {
+  list-style-type: none;
+}
+
+.custom-padding{
+  padding-top: 20px;
+}
+
+nav {
+  position: relative;
+  width: calc(100% - 60px);
+  margin: 0 auto;
+  padding: 10px 0;
+  background: #333;
+  z-index: 1;
+  text-align: right;
+  padding-right: 2%;
+}
+
+.logo {
+  width: 15%;
+  float: left;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 25px;
+  text-align: left;
+  padding-left: 2%;
+}
+
+.menu-area li {
+  display: inline-block;
+}
+
+.menu-area a {
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  padding: 0 25px;
+  font-size: 14px;
+  line-height: 55px;
+  position: relative;
+  z-index: 1;
+}
+.menu-area a:hover {
+  background: tomato;
+  color: #fff;
+}
+
+.menu-area a:hover:after {
+  transform: translateY(-50%) rotate(-35deg);
+}
+
+.initially_hidden_elements {
+  display:
+  none;
+}
+
+nav:before {
+  position: absolute;
+  content: '';
+  border-top: 10px solid #333;
+  border-right: 10px solid #333;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  top: 100%;
+  left: 0;
+}
+
+nav:after {
+  position: absolute;
+  content: '';
+  border-top: 10px solid #333;
+  border-left: 10px solid #333;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  top: 100%;
+  right: 0;
+}
+
+button {
+     width: 150px;
+     height: 70px;
+     border:none;
+     border-radius: 5px;
+     background: #333;
+     font-size: 25px;
+     color: white;
+     display: block;
+     font-size: 14px;
+     font-weight: 300;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+     font-family: "Times New Roman", Times, serif;
+
+}
+
+button:hover {
+     background:tomato;
+     color:black;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 50%;
+  border-radius: 8px;
+
+}
+
+#animation_button{
+  position: absolute;
+  left: 90px;
+  top: 210px;
+}
+
+#jQuery_Mobile_Nav_button{
+  position: absolute;
+  left: 90px;
+  top: 285px;
+}
+
+#portfolio1_button{
+  position: absolute;
+  left: 90px;
+  top: 360px;
+}
+#portfolio2_button{
+  position: absolute;
+  left: 90px;
+  top: 435px;
+}
+
+#portfolio3_button{
+  position: absolute;
+  left: 90px;
+  top: 510px;
+}
+
+#portfolio4_button{
+  position: absolute;
+  left: 90px;
+  top: 585px;
+}
+
+
+
+
+</style>
+<!--formating CSS end-->
+
+<!--jQuery Code-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<!--Toggle Start-->
+<script>
+$(document).ready(function(){
+  $("#animation_button").click(function(){
+    $("#animation_code_div").toggle('slow');
+  });
+});
+</script>
+
+<!--Toggle start-->
+<script>
+$(document).ready(function(){
+  $("#portfolio1_button").click(function(){
+    $("#Portfolio_Code_P1_div").toggle('slow');
+  });
+});
+</script>
+<!--Toggle End-->
+
+<!--Toggle start-->
+<script>
+$(document).ready(function(){
+  $("#portfolio2_button").click(function(){
+    $("#Portfolio_Code_P2_div").toggle('slow');
+  });
+});
+</script>
+<!--Toggle End-->
+
+<!--Toggle start-->
+<script>
+$(document).ready(function(){
+  $("#jQuery_Mobile_Nav_button").click(function(){
+    $("#jQuery_Nav_Code_div").toggle('slow');
+  });
+});
+</script>
+<!--Toggle End-->
+
+<!--Toggle start-->
+<script>
+$(document).ready(function(){
+  $("#portfolio3_button").click(function(){
+    $("#Portfolio_Code_P3_div").toggle('slow');
+  });
+});
+</script>
+<!--Toggle End-->
+
+<!--Toggle start-->
+<script>
+$(document).ready(function(){
+  $("#portfolio4_button").click(function(){
+    $("#Portfolio_Code_P4_div").toggle('slow');
+  });
+});
+</script>
+<!--Toggle End-->
+
+<!--Navigation Start-->
+<div class="custom-padding">
+  <nav>
+    <div class="logo">Ryan Bracalielly</div>
+
+    <ul class="menu-area">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+<!--Navigation End-->
+
+<body>
+
+    <div id = "animation_code_div" class="initially_hidden_elements">
+    <img src="https://i.postimg.cc/Y2WjKGpD/Animation-Code-Screen-Shot.png" alt="Animation Code" id="animation_code"/>
+    </div>
+
+    <div id = "jQuery_Nav_Code_div" class="initially_hidden_elements">
+    <img src="https://i.postimg.cc/TwkFYqr8/jquerymobilemenu.png" alt="jQuery Mobile Nav Code" id="jQuery_Mobile_Nav_Code"/>
+    </div>
+
+    <div id = "Portfolio_Code_P1_div" class="initially_hidden_elements">
+    <img src="https://i.postimg.cc/qqYQh1bK/port1.png" alt="Portfolio Code P1" id="Portfolio_Code_P1"/>
+    </div>
+
+    <div id = "Portfolio_Code_P2_div" class="initially_hidden_elements">
+    <img src="https://i.postimg.cc/ZYDwMqbq/port-2.png" alt="Portfolio Code P2" id="Portfolio_Code_P2"/>
+    </div>
+
+    <div id = "Portfolio_Code_P3_div" class="initially_hidden_elements">
+    <img src="https://i.postimg.cc/jdpZRkJ0/port-3.png" alt="Portfolio Code P3" id="Portfolio_Code_P3"/>
+    </div>
+
+    <div id = "Portfolio_Code_P4_div" class="initially_hidden_elements">
+    <img src="https://i.postimg.cc/7YGK8yhn/port-4.png" alt="Portfolio Code P3" id="Portfolio_Code_P3"/>
+    </div>
+
+  <!--Buttons-->
+  <button id="animation_button">Animation Code</button>
+  <button id="jQuery_Mobile_Nav_button">JQuery Mobile Nav Bar</button>
+  <button id="portfolio1_button">Portfolio Code P1</button>
+  <button id="portfolio2_button">Portfolio Code P2</button>
+  <button id="portfolio3_button">Portfolio Code P3</button>
+  <button id="portfolio4_button">Portfolio Code P4</button>
+  <!--Buttons-->
+
+
+
+
+</body>
+
+</html>
