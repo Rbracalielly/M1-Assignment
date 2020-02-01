@@ -1,4 +1,3 @@
-
 <html>
 <!--formating CSS Start-->
 <style>
@@ -13,6 +12,8 @@ body {
   -webkit-background-size:cover;
   background-size:cover;
   background-position: center center;
+  background-repeat: repeat;
+  background-attachment: scroll
   height: 100vh;
 }
 .menu-area li a {
@@ -73,6 +74,11 @@ nav {
   transform: translateY(-50%) rotate(-35deg);
 }
 
+.initially_hidden_elements {
+  display:
+  none;
+}
+
 nav:before {
   position: absolute;
   content: '';
@@ -117,51 +123,114 @@ button:hover {
      color:black;
 }
 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 50%;
+  border-radius: 8px;
+
+}
+
 #animation_button{
   position: absolute;
-  left: 100px;
-  top: 200px;
+  left: 90px;
+  top: 210px;
 }
-#show_hide_button{
+
+#jQuery_Mobile_Nav_button{
   position: absolute;
-  left: 100px;
-  top: 275px;
+  left: 90px;
+  top: 285px;
 }
+
 #portfolio1_button{
   position: absolute;
-  left: 100px;
-  top: 350px;
+  left: 90px;
+  top: 360px;
 }
 #portfolio2_button{
   position: absolute;
-  left: 100px;
-  top: 425px;
+  left: 90px;
+  top: 435px;
 }
+
+#portfolio3_button{
+  position: absolute;
+  left: 90px;
+  top: 510px;
+}
+
+#portfolio4_button{
+  position: absolute;
+  left: 90px;
+  top: 585px;
+}
+
+
+
 
 </style>
 <!--formating CSS end-->
 
-<!--hide and show start-->
-<!--
-<script>
-    $(document).ready(function(){
-      $("#hide").click(function(){
-        $("#sldr").hide();
-      });
-      $("#show").click(function() {
-        $("#sldr").show();
-      });
-    });
-</script>
--->
-<!--Code No Longer use, leaving in case I ever want to add it back in-->
-<!--hide and show end-->
+<!--jQuery Code-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
 <!--Toggle Start-->
 <script>
 $(document).ready(function(){
   $("#animation_button").click(function(){
-    $("#test").toggle('slow');
+    $("#animation_code_div").toggle('slow');
+  });
+});
+</script>
+
+<!--Toggle start-->
+<script>
+$(document).ready(function(){
+  $("#portfolio1_button").click(function(){
+    $("#Portfolio_Code_P1_div").toggle('slow');
+  });
+});
+</script>
+<!--Toggle End-->
+
+<!--Toggle start-->
+<script>
+$(document).ready(function(){
+  $("#portfolio2_button").click(function(){
+    $("#Portfolio_Code_P2_div").toggle('slow');
+  });
+});
+</script>
+<!--Toggle End-->
+
+<!--Toggle start-->
+<script>
+$(document).ready(function(){
+  $("#jQuery_Mobile_Nav_button").click(function(){
+    $("#jQuery_Nav_Code_div").toggle('slow');
+  });
+});
+</script>
+<!--Toggle End-->
+
+<!--Toggle start-->
+<script>
+$(document).ready(function(){
+  $("#portfolio3_button").click(function(){
+    $("#Portfolio_Code_P3_div").toggle('slow');
+  });
+});
+</script>
+<!--Toggle End-->
+
+<!--Toggle start-->
+<script>
+$(document).ready(function(){
+  $("#portfolio4_button").click(function(){
+    $("#Portfolio_Code_P4_div").toggle('slow');
   });
 });
 </script>
@@ -183,16 +252,38 @@ $(document).ready(function(){
 <!--Navigation End-->
 
 <body>
-  <!--code screen shots-->
-  <!--<img src="C:\Users\Ryan\Desktop\test.jpg" alt="Animation Code" id="test"/>
-  -->
-  <!--code screen shots-->
+
+    <div id = "animation_code_div" class="initially_hidden_elements">
+    <img src="https://i.postimg.cc/Y2WjKGpD/Animation-Code-Screen-Shot.png" alt="Animation Code" id="animation_code"/>
+    </div>
+
+    <div id = "jQuery_Nav_Code_div" class="initially_hidden_elements">
+    <img src="https://i.postimg.cc/TwkFYqr8/jquerymobilemenu.png" alt="jQuery Mobile Nav Code" id="jQuery_Mobile_Nav_Code"/>
+    </div>
+
+    <div id = "Portfolio_Code_P1_div" class="initially_hidden_elements">
+    <img src="https://i.postimg.cc/qqYQh1bK/port1.png" alt="Portfolio Code P1" id="Portfolio_Code_P1"/>
+    </div>
+
+    <div id = "Portfolio_Code_P2_div" class="initially_hidden_elements">
+    <img src="https://i.postimg.cc/ZYDwMqbq/port-2.png" alt="Portfolio Code P2" id="Portfolio_Code_P2"/>
+    </div>
+
+    <div id = "Portfolio_Code_P3_div" class="initially_hidden_elements">
+    <img src="https://i.postimg.cc/jdpZRkJ0/port-3.png" alt="Portfolio Code P3" id="Portfolio_Code_P3"/>
+    </div>
+
+    <div id = "Portfolio_Code_P4_div" class="initially_hidden_elements">
+    <img src="https://i.postimg.cc/7YGK8yhn/port-4.png" alt="Portfolio Code P3" id="Portfolio_Code_P3"/>
+    </div>
 
   <!--Buttons-->
   <button id="animation_button">Animation Code</button>
-  <button id="show_hide_button">Show/Hide Code</button>
+  <button id="jQuery_Mobile_Nav_button">JQuery Mobile Nav Bar</button>
   <button id="portfolio1_button">Portfolio Code P1</button>
   <button id="portfolio2_button">Portfolio Code P2</button>
+  <button id="portfolio3_button">Portfolio Code P3</button>
+  <button id="portfolio4_button">Portfolio Code P4</button>
   <!--Buttons-->
 
 
