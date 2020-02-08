@@ -1,3 +1,8 @@
+var apikey='&api-key=ngAuSZBToKWbflCjzZFyXn13GNkGrsUe'
+var urlbase = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q='
+
+
+
 var url = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=bernie&api-key=ngAuSZBToKWbflCjzZFyXn13GNkGrsUe'
 
 function setup() {
