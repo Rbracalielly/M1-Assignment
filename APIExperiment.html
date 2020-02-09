@@ -128,8 +128,12 @@ p {
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 1px;
-  text-transform: uppercase;
   font-family: "Times New Roman", Times, serif;
+}
+
+
+h1 {
+    color: white;
 }
 
 #search_button{
@@ -145,6 +149,21 @@ p {
   padding-right: 10px;
 }
 
+#demo{
+  position: absolute;
+  left: 200px;
+  top: 300px;
+  padding-right: 10px;
+}
+
+
+#demo1{
+  position: absolute;
+  left: 200px;
+  top: 400px;
+  padding-right: 10px;
+}
+
 
 
 </style>
@@ -153,23 +172,15 @@ p {
 <!--jQuery Code-->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-<script>
-
-
-</script>
-
-
-
-
 <!--Navigation Start-->
 <div class="custom-padding">
   <nav>
     <div class="logo">Ryan Bracalielly</div>
 
     <ul class="menu-area">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Portfolio</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="APIExperiment.html">New York Times Experiment</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
@@ -178,12 +189,54 @@ p {
 
 <body>
 
-      <button id="search_button">Search</button>
-
-  <div id = search_div>
+  <div id="search_div">
     <p>Search New Yotk Times Articles</p>
-    <p><input type = "text" id= "user_input"></p>
+    <p><input type="text" id="input_text" value="Tech"></p>
   </div>
+
+  <button type="button" id="search_button" onclick="nytApiFunction()">Search</button>
+
+  <p id="demo"></p>
+  <p id="demo1"></p>
+
+<script>
+function nytApiFunction() {
+  var x = document.getElementById("input_text").value;
+
+  //for troubleshooting
+  //document.getElementById("demo").innerHTML = x;
+
+  var urlbase = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="
+  var apikey = "&api-key=ngAuSZBToKWbflCjzZFyXn13GNkGrsUe"
+  var url = urlbase+x+apikey;
+
+  //for troubleshooting
+  document.getElementById("demo1").innerHTML = url;
+
+  function setup() {
+    noCanvas();
+    loadJSON(url, getData);
+  }
+
+  function getData(data) {
+    var articles = data.response.docs;
+
+    //loop to get all results from article articlesearch
+    for (var i = 0; i < articles.length; i++){
+      createElement('h1', articles[i].headline.main);
+      createP(articles[i].snippet);
+      createP(articles[i].lead_paragraph);
+      createP(articles[i].web_url);
+      }
+
+
+    }
+}
+
+  </script>
+
+
+
 
 
 </body>
