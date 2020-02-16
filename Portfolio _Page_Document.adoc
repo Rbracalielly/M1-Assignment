@@ -1,5 +1,7 @@
 # Portfolio Page (portfolio.html)
 
+:imagesdir: images
+
 ## What is this Page? 
 This is a sample of creating professional looking home page using various CSS elements and jQuery
 
@@ -34,3 +36,11 @@ Each button is created through CSS using the same colors as the Navigation Bar. 
 
 ## Programming Languages used 
 - HTML, CSS, jQuery
+
+## GIT Branch Strategy 
+
+image::GIT_Branch_Strat.png[alt=branch_strategy,width=550px][orientation=portrait]
+
+## implantation Strategy
+
+image::Implementation.png[alt=implementation,width=500px][orientation=portrait]
