@@ -13,32 +13,32 @@ This is a page for documenting the various issues as well as unfinished work fou
 6.)	About me – add in link to LinkedIn account
 
 -	Possible work 
-7.)	Break up work experience to separate page.
+1.)	Break up work experience to separate page.
 
 -	Issues
-8.)	Enlarge/Reduce Button not changing text size. Proposed Solution: Create a div class for all text and attempt to call method on div class. 
-9.)	Cat Animation – Cat not sliding across screen when shown. Proposed Solution: Unknown needs further research.
+1.)	Enlarge/Reduce Button not changing text size. Proposed Solution: Create a div class for all text and attempt to call method on div class. 
+2.)	Cat Animation – Cat not sliding across screen when shown. Proposed Solution: Unknown needs further research.
 
 ## Portfolio Page (portfolio.html) 
 -	Ongoing work 
-10.)	 N/A
+1.)	 N/A
 
 -	Possible work 
-11.)	 Add more buttons with further code examples. 
-12.)	 Add code so only 1 screen shots can be show at time.
+1.)	 Add more buttons with further code examples. 
+2.)	 Add code so only 1 screen shots can be show at time.
 
 -	Issues
-13.)	Background – Background zooms in upon showing code screenshot. This causes the background to become distorted at times.  Proposed Solution: Change background CSS properties. Will require further research. 
+1.)	Background – Background zooms in upon showing code screenshot. This causes the background to become distorted at times.  Proposed Solution: Change background CSS properties. Will require further research. 
 
 ## API Experiment Page (APIExperiment.html) 
 -	Ongoing work 
-14.)	 Review CSS for text upon resolution of issue listed below.
+1.)	 Review CSS for text upon resolution of issue listed below.
 
 -	Possible work 
-15.)	 N/A 
+2.)	 N/A 
 
 -	Issues
-16.)	Articles not pulling – Some confusion on how pull article text into the page. Appears an ajax call would need to be made but is unsure how this is done. Will need to seek help from Advanced Programming: OAON SP19 Professor Jeff on this topic. 
+3.)	Articles not pulling – Some confusion on how pull article text into the page. Appears an ajax call would need to be made but is unsure how this is done. Will need to seek help from Advanced Programming: OAON SP19 Professor Jeff on this topic. 
 
 
 
