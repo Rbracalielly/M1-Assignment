@@ -1,9 +1,9 @@
-##Home Page (index.html)
+# Home Page (index.html)
 
-##What is this Page? 
+## What is this Page? 
 This is a home page that has a navigation bar to several other projects. Also has several buttons to change display content along with various information on Ryan Bracalielly
 
-##Navigation Bar 
+## Navigation Bar 
 - index.html
   Week 1 and 2 of Advanced Programming: OAON SP19
 - enlarge_reduce.html, jQueryMobileNav.html, show_hide.html, animatedgif.html, dropdown.html, animatedgif.html
@@ -13,7 +13,7 @@ Week three of Advanced Programming: OAON SP19, lesson on creating a professional
 - APIExperiment.html
   This is a lesson in calling an API to an HTML page 
   
-##About Me
+## About Me
 - Images 
   Contains 1 image of Ryan Bracalielly
 - Buttons
@@ -22,7 +22,7 @@ Week three of Advanced Programming: OAON SP19, lesson on creating a professional
 - Text 
   Contains small snippet of information on Ryan Bracalielly 
   
-##Work 
+## Work 
 - Images 
   Contains 1 cat gif 
 - Buttons
@@ -30,5 +30,5 @@ Week three of Advanced Programming: OAON SP19, lesson on creating a professional
 - Text 
   Contains the latest work experience of Ryan Bracalielly
 
-##Issues
+## Issues
 - All issues can be found in the Issues document
