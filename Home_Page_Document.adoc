@@ -38,8 +38,8 @@ Week three of Advanced Programming: OAON SP19, lesson on creating a professional
 
 
 ## GIT Branch Strategy 
-Image::GIT_Branch_Strat.png[alt=branch_ strategy,width=550px],[orientation=portrait]
+Image::GIT_Branch_Strat.png[alt=branch_ strategy,width=550px][orientation=portrait]
 
 ## implantation Strategy
-Image::Implementation.png[alt=implementation,width=550px],[orientation=portrait]
+Image::Implementation.png[alt=implementation,width=550px][orientation=portrait]
 
