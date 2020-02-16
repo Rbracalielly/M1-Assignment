@@ -1,0 +1,34 @@
+##Home Page (index.html)
+
+##What is this Page? 
+This is a home page that has a navigation bar to several other projects. Also has several buttons to change display content along with various information on Ryan Bracalielly
+
+##Navigation Bar 
+- index.html
+  Week 1 and 2 of Advanced Programming: OAON SP19
+- enlarge_reduce.html, jQueryMobileNav.html, show_hide.html, animatedgif.html, dropdown.html, animatedgif.html
+  Week 3 of Advanced Programming: OAON SP19, these are practical lessons on jQuery 
+- portfolio.html 
+Week three of Advanced Programming: OAON SP19, lesson on creating a professional looing portfolio page. Also show off the code used in the project 
+- APIExperiment.html
+  This is a lesson in calling an API to an HTML page 
+  
+##About Me
+- Images 
+  Contains 1 image of Ryan Bracalielly
+- Buttons
+  Buttons to Enlarge or Reduce text for the entire page 
+  Drop down button containing class information 
+- Text 
+  Contains small snippet of information on Ryan Bracalielly 
+  
+##Work 
+- Images 
+  Contains 1 cat gif 
+- Buttons
+  Buttons that show or hide the cat gif mentioned above
+- Text 
+  Contains the latest work experience of Ryan Bracalielly
+
+##Issues
+- All issues can be found in the Issues document
