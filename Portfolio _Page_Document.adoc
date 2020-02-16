@@ -9,6 +9,7 @@ This is a sample of creating professional looking home page using various CSS el
 	Black background 
 	Tomato Hover
 - Currently only the HOME and PORTFOLIO options work 
+
 ## Buttons 
 Each button is created through CSS using the same colors as the Navigation Bar. Clicking a button will a screenshot of code that used through the various projects in Advanced Programming: OAON SP19
 - Animation Button
