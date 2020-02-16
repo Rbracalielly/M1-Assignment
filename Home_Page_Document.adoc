@@ -1,6 +1,6 @@
 # Home Page (index.html)
 
-::imagesdir: images
+:imagesdir: images
 
 ## What is this Page? 
 This is a home page that has a navigation bar to several other projects. Also has several buttons to change display content along with various information on Ryan Bracalielly
