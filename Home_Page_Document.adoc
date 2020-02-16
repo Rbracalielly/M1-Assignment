@@ -32,3 +32,6 @@ Week three of Advanced Programming: OAON SP19, lesson on creating a professional
 
 ## Issues
 - All issues can be found in the Issues document
+
+## Programming Languages used 
+- HTML, CSS, jQuery
