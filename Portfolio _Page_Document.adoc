@@ -12,6 +12,7 @@ This is a sample of creating professional looking home page using various CSS el
 
 ## Buttons 
 Each button is created through CSS using the same colors as the Navigation Bar. Clicking a button will a screenshot of code that used through the various projects in Advanced Programming: OAON SP19
+
 - Animation Button
 	Toggle screen shot of animation code used found in index.html page and animatedgif.html projects 
 - jQuery Mobile Nav Bar 
