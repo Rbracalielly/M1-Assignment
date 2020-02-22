@@ -3,82 +3,203 @@
 
   <style>
 
-    h1 {
-      color: #1E90FF;
-      font-style: bold;
-      font-size: 25px;
-    }
-    h2 {
-      color: #1E90FF;
-      font-style: bold;
-      font-size: 20px;
-    }
-    h3 {
-      color: #1E90FF;
-      font-style: bold;
-      font-size: 18px;
-    }
-    h4 {
-      color: #1E90FF;
-      font-style: bold;
-      font-size: 16px;
-    }
-    h5 {
-      color: #1E90FF;
-      font-style: bold;
-      font-size: 14px;
-    }
-    p{
-      font-style: italic;
-      color: gray;
-      font-size: 12px;
-    }
-    ul{
-      list-style: circle;
-      margin: 3;
-      padding: 3;
-    }
-      .dropbtn {
-        background-color: #1E90FF;
-        color: white;
-        padding: 16px;
-        font-size: 16px:
-        border: none;
-        cursor: pointer;
-      }
+  * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: url(https://i.postimg.cc/MTHg6kHc/614443.jpg);
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position: center center;
+    background-repeat: repeat;
+    background-attachment: scroll
+    height: 100vh;
+  }
+  .menu-area li a {
+    text-decoration: none;
+  }
 
-      .dropdown{
-        postion: relative;
-        display: inline-block;
-      }
+  .menu-area li {
+    list-style-type: none;
+  }
 
-      .dropdown-content {
-        display: none;
-        postion: absolute;
-        background-color: white;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-      }
+  .custom-padding{
+    padding-top: 20px;
+  }
 
-        .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        }
+  nav {
+    position: relative;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    padding: 10px 0;
+    background: #333;
+    z-index: 1;
+    text-align: right;
+    padding-right: 2%;
+  }
 
-      .dropdown-content a:hover {
-        background-color: #flflfl;
-        }
+  .logo {
+    width: 15%;
+    float: left;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 2%;
+  }
 
-      .dropdown:hover .dropdown-content{
-        display: block;
-        }
+  .menu-area li {
+    display: inline-block;
+  }
 
-      .dropdown:hover .dropbtn{
-        background-color: white;
-        }
+  .menu-area a {
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 25px;
+    font-size: 14px;
+    line-height: 55px;
+    position: relative;
+    z-index: 1;
+  }
+  .menu-area a:hover {
+    background: tomato;
+    color: #fff;
+  }
+
+  .menu-area a:hover:after {
+    transform: translateY(-50%) rotate(-35deg);
+  }
+
+  .initially_hidden_elements {
+    display:
+    none;
+  }
+
+  nav:before {
+    position: absolute;
+    content: '';
+    border-top: 10px solid #333;
+    border-right: 10px solid #333;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    top: 100%;
+    left: 0;
+  }
+
+  nav:after {
+    position: absolute;
+    content: '';
+    border-top: 10px solid #333;
+    border-left: 10px solid #333;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    top: 100%;
+    right: 0;
+  }
+
+  button {
+       width: 150px;
+       height: 70px;
+       border:none;
+       border-radius: 5px;
+       background: #333;
+       font-size: 25px;
+       color: white;
+       display: block;
+       font-size: 14px;
+       font-weight: 300;
+       letter-spacing: 1px;
+       text-transform: uppercase;
+       font-family: "Times New Roman", Times, serif;
+}
+
+  button:hover {
+       background:tomato;
+       color:black;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 50%;
+    border-radius: 8px;
+
+  }
+
+  p {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+
+  h1 {
+      color: white;
+  }
+
+  h2 {
+      color: white;
+  }
+
+  h3 {
+      color: white;
+  }
+
+  h4 {
+      color: white;
+  }
+
+  h5 {
+      color: white;
+  }
+
+  .dropdown{
+    postion: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    postion: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+
+  .dropdown-content a:hover {
+    background-color: tomato;
+  }
+
+  .dropdown:hover .dropdown-content{
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn{
+    background-color: #333;
+  }
+
+  #Ryan_Bracalielly_Photo_1{
+    left: 90px;
+    top: 210px;
+  }
 
 </style>
 
@@ -86,7 +207,6 @@
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
 
 
 <!--slidding animation-->
@@ -130,38 +250,24 @@
 <body>
 <header>
   <section class="profileHeader">
-    <h1>Ryan Bracalielly: PointPark Information Technology Senor and Technical Support Engineer Level 3 for Teletracking Technologies</h1>
-    <body>
-      <div data-role="page" id="page1">
-        <div data-role="header">
-          <h1>Ryan Bracalielly - PointPark Information Technology Senor</h1>
-        </div> <!--header-->
-          <div data-role="main" class="ui-content"
-          </div> <!--main-->
 
-      <div data-role="footer">
-         <!--navbar-->
-        <div data-role="navbar">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="APIExperiment.html">New York Times Experiment</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-          </ul>
-        </div> <!--navbar-->
-        <div data-role="navbar">
-          <ul>
-            <li><a href="#slidedown.html">SlideDown Experiment</a></li>
-            <li><a href="enlarge_reduce.html">Enlarge/Reduce Elements Experiment</a></li>
-            <li><a href="animatedgif.html">Animation Experiment</a></li>
-            <li><a href="show_hide.html">Show/Hide Experiment</a></li>
-          </ul>
-        </div> <!--navbar-->
-      </div> <!--footer-->
-    </div> <!--page-->
-    <h2>About Me</h3>
-    <hr>
-    <div>
-      <img src="images/websiteimage.jpg">
+         <!--Navigation Start-->
+         <div class="custom-padding">
+           <nav>
+             <div class="logo">Ryan Bracalielly</div>
+
+             <ul class="menu-area">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Portfolio</a></li>
+               <li><a href="#">Contact</a></li>
+             </ul>
+           </nav>
+         </div>
+         <!--Navigation End-->
+
+
+      <img src="https://i.postimg.cc/qvgm6c0Y/websiteimage.jpg" alt="Ryan_Bracalielly_Photo_1" style="width:300px;height:400px">
 
 
       <button id="enlarge">Need Larger Text Clck Here</button>
@@ -180,6 +286,7 @@
           </div> <!--dropdowncontent-->
       </div> <!--dropbtn-->
     </div>
+
   <!-- Contact details -->
   <section class="section1">
     <h2 class="sectionTitle">How to contact me</h2>
@@ -204,7 +311,7 @@
 
       <form id="form1" runat="server">
         <div>
-          <img id="sldr" src="images/work.gif" style="display:absolute" />
+          <img id="sldr" src="https://i.postimg.cc/mk2ndvfZ/workimage.gif" style="width:200px;height:200px" />
         </div>
       </form>
 
