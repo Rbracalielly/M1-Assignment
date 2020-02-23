@@ -140,6 +140,9 @@
     font-weight: 300;
     letter-spacing: 1px;
     font-family: "Times New Roman", Times, serif;
+    position: absolute;
+    left: 600px;
+    top: 200px;
   }
 
 
@@ -170,7 +173,9 @@
 
   .dropdown-content {
     display: none;
-    postion: absolute;
+    position: absolute;
+    left: 600px;
+    top: 410px;
     background-color: #333;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -186,20 +191,66 @@
 
   .dropdown-content a:hover {
     background-color: tomato;
+    color: white;
   }
 
   .dropdown:hover .dropdown-content{
     display: block;
+    color: white;
   }
 
   .dropdown:hover .dropbtn{
     background-color: #333;
+    color: white;
   }
 
+
+
   #Ryan_Bracalielly_Photo_1{
-    left: 90px;
-    top: 210px;
+    height: 400px;
+    width: 300px;
+
+    position: absolute;
+    left: 60px;
+    top: 10px;
   }
+
+  #Ryan_Bracalielly_Photo_2{
+    height: 300px;
+    width: 200px;
+
+    position: absolute;
+    left: 280px;
+    top: 310px;
+  }
+
+
+  #Ryan_Bracalielly_Photo_3{
+    height: 300px;
+    width: 200px;
+
+    position: absolute;
+    left: 310px;
+    top: 40px;
+  }
+
+
+  #Ryan_Bracalielly_Photo_4{
+    height: 300px;
+    width: 200px;
+
+    position: absolute;
+    left: 110px;
+    top: 350px;
+  }
+
+  #drop_down{
+    position: absolute;
+    left: 600px;
+    top: 350px;
+  }
+
+
 
 </style>
 
@@ -251,33 +302,32 @@
 <header>
   <section class="profileHeader">
 
-         <!--Navigation Start-->
-         <div class="custom-padding">
-           <nav>
-             <div class="logo">Ryan Bracalielly</div>
-
-             <ul class="menu-area">
+    <!--Navigation Start-->
+     <div class="custom-padding">
+       <nav>
+          <div class="logo">Ryan Bracalielly</div>
+            <ul class="menu-area">
                <li><a href="#">Home</a></li>
                <li><a href="#">About</a></li>
                <li><a href="#">Portfolio</a></li>
                <li><a href="#">Contact</a></li>
              </ul>
-           </nav>
-         </div>
+        </nav>
+      </div>
          <!--Navigation End-->
 
+      <img src="https://i.postimg.cc/qvgm6c0Y/websiteimage.jpg" alt="Ryan Bracalielly Photo 1" id="Ryan_Bracalielly_Photo_1">
+          <img src="https://i.postimg.cc/T3FZhCy7/photo-2019-05-09-21-58-18.jpg" alt="Ryan Bracalielly Photo 3" id="Ryan_Bracalielly_Photo_3">
+            <img src="https://i.postimg.cc/DZdDjhxH/photo-2019-05-09-21-58-21.jpg" alt="Ryan Bracalielly Photo 2" id="Ryan_Bracalielly_Photo_2">
+              <img src="https://i.postimg.cc/HxCR9n9b/photo-2019-05-02-22-01-22.jpg" alt="Ryan Bracalielly Photo 4" id="Ryan_Bracalielly_Photo_4">
 
-      <img src="https://i.postimg.cc/qvgm6c0Y/websiteimage.jpg" alt="Ryan_Bracalielly_Photo_1" style="width:300px;height:400px">
+      <p>My Name is Ryan Bracalielly and nice to meet you. I live in Pittsburgh Pennsylvania and have been living here most of life. I am a senior at Pont Park University, and I will be graduating April 2020. I currently work for a company in the city of Pittsburgh by the name of Teletracking where I am level 3 technical support engineer.<br>
+        <br>
+        Below are the classes I am taking in my weeks of class. Feel free to take a look around and thanks for visting.
+      </p>
 
-
-      <button id="enlarge">Need Larger Text Clck Here</button>
-      <button id="reduce">To Reduce The Text After Enlarging Click Here</button>
-
-
-      <p>My Name is Ryan Bracalielly and nice to meet you. I live in Pittsburgh Pennsylvania and have been living here most of life. I am a senior at Pont Park University, and I will be graduating April 2020. I currently work for a company in the city of Pittsburgh by the name of Teletracking where I am level 3 technical support engineer.</p>
-      <p>My Schedule for my last 16 weeks of class consist of the following class:</p>
       <div class="dropdown">
-        <button class="dropbtn">Hover Here To See My Classes</button>
+        <button class="dropbtn" id="drop_down">Hover Here To See My Classes</button>
           <div class="dropdown-content">
             <a href="#">CMPS 262 O A ON	Advanced Programming</a>
             <a href="#">PADM 210 O A ON	Public Administration</a>
@@ -287,66 +337,8 @@
       </div> <!--dropbtn-->
     </div>
 
-  <!-- Contact details -->
-  <section class="section1">
-    <h2 class="sectionTitle">How to contact me</h2>
-    <hr class="sectionTitleRule">
-    <div class="section1Content">
-      <p><span>Email :</span> rbraca@pointpark.edu</p>
-      <p><span>Linkedin :</span> https://www.linkedin.com/in/ryan-bracalielly/</p>
-      <p><span>Residence :</span> Pittsburgh, PA</p>
-    </div>
-  </section>
-  <!-- Previous experience details -->
-  <section class="section2">
-    <h2 class="sectionTitle">Work Experience</h2>
-    <hr class="sectionTitleRule">
-      <button id="show">Start Working</button>
-      <button id="hide">Stop Working</button>
-    <!-- First Title & company details  -->
-    <article class="section2Content">
-      <h3 class="sectionContentTitle">Technical Support Engineer Level 3</h3>
-      <h4 class="sectionContentSubTitle">TeleTracking Technologies Inc.</h4>
-      <h5 class="sectionContentSubTitle">Feb. 2015-Present</h5>
 
-      <form id="form1" runat="server">
-        <div>
-          <img id="sldr" src="https://i.postimg.cc/mk2ndvfZ/workimage.gif" style="width:200px;height:200px" />
-        </div>
-      </form>
 
-      <p class="sectionContent enlargeable">Conduct system testing events, accurately correcting and documenting noted errors or deficiencies.</p>
-      <p class="sectionContent">Plan and oversee all stages and logistics of installation and testing of new products and improvements to computer systems.</p>
-      <p class="sectionContent">Test computer software/hardware using standard diagnostic tools andprocedures.</p>
-      <p class="sectionContent">Assign duties, responsibilities, and spans of authority to Level 1 and Level 2 teams.</p>
-      <p class="sectionContent">Document software defects through usage of bug tracking system, providing detailed defect reports to software developers.</p>
-      <p class="sectionContent">Maintain current application knowledge for assigned applications and process areas.</p>
-      <p class="sectionContent">Maintain current application knowledge for assigned applications and process areas.</p>
-      <p class="sectionContent">Develop new and revise existing end-user training content, including instructional and procedural manuals.</p>
-      <p class="sectionContent">Maintain all case/project retrospection documentation, providing knowledge-sharing to other team members.</p>
-    </article>
-    <article class="section2Content">
-      <h3 class="sectionContentTitle">Response Center Specialist</h3>
-      <h4 class="sectionContentSubTitle">Remote DBA Experts LLC</h4>
-      <h5 class="sectionContentSubTitle">April 2014 - Dec. 2014</h5>
-      <p class="sectionContent">Utilized database tools and techniques to build code, test, and troubleshoot programs and databases, correcting errors and making necessary modifications.</p>
-      <p class="sectionContent">Proposed, developed, and implemented database administration policies, standards, and guidelines to improve database administration operations.</p>
-      <p class="sectionContent">Installed and performed repairs to hardware, software, and peripheral equipment.</p>
-      <p class="sectionContent">Read technical manuals, conferred with users, and conducted computer diagnostics to provide technical assistance and support.</p>
-      <p class="sectionContent">Utilized best practices in case handling, customer follow-up, documented interactions, and work performed.</p>
-      <p class="sectionContent">Monitored database performance and capacity planning</p>
-      <p class="sectionContent">Maintained working knowledge of database concepts, including procedures, functions, views, keys, and indexes.</p>
-    </article>
-    <!-- Second Title & company details  -->
-    <!-- Replicate the above Div block to add more title and company details -->
-  </section>
-	  <section class="section2">
-    <hr class="sectionTitleRule2">
-</section></section>
-<footer>
-  <hr>
-  <p class="footerDisclaimer">2020 Copyright</p>
-  <p class="footerNote">Ryan Bracalielly</p>
-</footer>
 </body>
+
 </html>
