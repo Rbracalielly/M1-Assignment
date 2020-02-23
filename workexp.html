@@ -1,0 +1,363 @@
+<html>
+<head>
+
+  <style>
+
+  * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: url(https://i.postimg.cc/C1tY3j0q/wp4254894.jpg);
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position: center center;
+    background-repeat: repeat;
+    background-attachment: scroll
+    height: 100vh;
+  }
+  .menu-area li a {
+    text-decoration: none;
+  }
+
+  .menu-area li {
+    list-style-type: none;
+  }
+
+  .custom-padding{
+    padding-top: 20px;
+  }
+
+  nav {
+    position: relative;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    padding: 10px 0;
+    background: #333;
+    z-index: 1;
+    text-align: right;
+    padding-right: 2%;
+  }
+
+  .logo {
+    width: 15%;
+    float: left;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 2%;
+  }
+
+  .menu-area li {
+    display: inline-block;
+  }
+
+  .menu-area a {
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 25px;
+    font-size: 14px;
+    line-height: 55px;
+    position: relative;
+    z-index: 1;
+  }
+  .menu-area a:hover {
+    background: tomato;
+    color: #fff;
+  }
+
+  .menu-area a:hover:after {
+    transform: translateY(-50%) rotate(-35deg);
+  }
+
+  .initially_hidden_elements {
+    display:
+    none;
+  }
+
+  nav:before {
+    position: absolute;
+    content: '';
+    border-top: 10px solid #333;
+    border-right: 10px solid #333;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    top: 100%;
+    left: 0;
+  }
+
+  nav:after {
+    position: absolute;
+    content: '';
+    border-top: 10px solid #333;
+    border-left: 10px solid #333;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    top: 100%;
+    right: 0;
+  }
+
+  button {
+       width: 150px;
+       height: 70px;
+       border:none;
+       border-radius: 5px;
+       background: #333;
+       font-size: 25px;
+       color: white;
+       display: block;
+       font-size: 14px;
+       font-weight: 300;
+       letter-spacing: 1px;
+       text-transform: uppercase;
+       font-family: "Times New Roman", Times, serif;
+}
+
+  button:hover {
+       background:tomato;
+       color:black;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 50%;
+    border-radius: 8px;
+
+  }
+
+  p {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: "Times New Roman", Times, serif;
+
+  }
+
+
+  h1 {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: "Times New Roman", Times, serif;
+
+  }
+
+  h2 {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: "Times New Roman", Times, serif;
+
+  }
+
+  h3 {
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: "Times New Roman", Times, serif;
+
+  }
+
+  h4 {
+    color: white;
+    font-size: 21px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: "Times New Roman", Times, serif;
+
+  }
+
+  h5 {
+    color: white;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: "Times New Roman", Times, serif;
+
+  }
+
+#intro{
+  position: absolute;
+  left: 100px;
+  top: 100px;
+
+}
+
+#technical{
+  position: absolute;
+  left: 100px;
+  top: 230px;
+
+}
+
+#education{
+  position: absolute;
+  left: 100px;
+  top: 320px;
+}
+
+#work_exp_1{
+  position: absolute;
+  left: 100px;
+  top: 450px;
+}
+
+#work_exp_2{
+  position: absolute;
+  left: 100px;
+  top: 690px;
+}
+
+
+
+
+</style>
+
+<title>Ryan Bracalielly - PointPark Information Technology Senor</title>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+<!--slidding animation-->
+<script type="text/javascript">
+    $(document).ready(function() {
+      function rgt() {
+        $('#sldr').animate({ left: "1000" }, 10000, hider);
+        }
+        rgt();
+        function hider(){
+        $('#sldr').css('left', '700px');
+          rgt();
+        }
+    });
+
+</script>
+<!--slidding animation-->
+<script>
+    $(document).ready(function(){
+      $("#hide").click(function(){
+        $("#sldr").hide();
+      });
+      $("#show").click(function() {
+        $("#sldr").show();
+      });
+    });
+</script>
+
+<!--enlarge/reduce-->
+<script>
+  $("button#enlarge").on("click", function(){
+    $("p.enlargeable").addClass("big");
+    });
+  $("button#reduce").on("click", function(){
+      $("p.enlargeable").removeClass("big");
+      });
+
+</script>
+
+</head>
+<body>
+<header>
+  <section class="profileHeader">
+
+    <!--Navigation Start-->
+     <div class="custom-padding">
+       <nav>
+          <div class="logo">Ryan Bracalielly</div>
+            <ul class="menu-area">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="workexp.html">Work Exp</a></li>
+              <li><a href="portfolio.html">Code Portfolio</a></li>
+              <li><a href="#">Contact Info</a></li>
+              <li><a href="APIExperiment.html">Api Experiment</a></li>
+             </ul>
+        </nav>
+      </div>
+         <!--Navigation End-->
+
+         <div id = "intro">
+          <section class="section2">
+            <article class="section2Content">
+              <h3 class="sectionContentTitle">Background</h3>
+              <p class="sectionContent">A diversified IT Professional with both technical and interpersonal skills necessary for mutual success in a progressive IT environment.<br>
+              Experienced in working with all levels of senior management to develop and implement company-wide policies and procedures.<br>
+              A systemic problem solver, providing daily support for existing infrastructure, programs, and internal teams. Highly responsive communicator, disseminating crucial information in a streamlined and timely manner. <br>
+             Skilled at collaborating with large, multi-departmental teams to resolve issues and anticipate future needs of clients and colleagues based on data analysis.</p>
+            </article>
+         </div>
+
+         <div id = "technical">
+          <section class="section2">
+            <article class="section2Content">
+              <h3 class="sectionContentTitle">Technical Knowledge</h3>
+              <p class="sectionContent">Programming Languages: SQL | Python | Lua | Java | HTLML<br>
+              Operating Systems: Windows | UNIX | Linux <br>
+              Software: MS Office | Adobe Flash | Adobe Photoshop | FileZilla | Adobe Creative Cloud | Report Server | Tableau | SharePoint <br>
+            </article>
+         </div>
+
+         <div id = "education">
+           <section class="section2">
+             <article class="section2Content">
+               <h3 class="sectionContentTitle">Education</h3>
+               <p class="sectionContent">BS - Information Technology<br>
+                 Point Park University, Pittsburgh PA<br>
+                 Expected Graduation April 2020<br>
+                 AS - Information Technology<br>
+                 Community College of Allegheny County, Pittsburgh PA<br>
+              </article>
+        </div>
+
+        <div id = "work_exp_1">
+         <section class="section2">
+           <!-- First Title & company details  -->
+           <article class="section2Content">
+             <h3 class="sectionContentTitle">Technical Support Engineer Level 3</h3>
+             <h4 class="sectionContentSubTitle">TeleTracking Technologies Inc.</h4>
+             <h5 class="sectionContentSubTitle">Feb. 2015-Present</h5>
+             <p class="sectionContent">Conduct system testing events, accurately correcting and documenting noted errors or deficiencies.</p>
+             <p class="sectionContent">Plan and oversee all stages and logistics of installation and testing of new products and improvements to computer systems.</p>
+             <p class="sectionContent">Test computer software/hardware using standard diagnostic tools andprocedures.</p>
+             <p class="sectionContent">Assign duties, responsibilities, and spans of authority to Level 1 and Level 2 teams.</p>
+             <p class="sectionContent">Document software defects through usage of bug tracking system, providing detailed defect reports to software developers.</p>
+             <p class="sectionContent">Maintain current application knowledge for assigned applications and process areas.</p>
+             <p class="sectionContent">Maintain current application knowledge for assigned applications and process areas.</p>
+             <p class="sectionContent">Develop new and revise existing end-user training content, including instructional and procedural manuals.</p>
+             <p class="sectionContent">Maintain all case/project retrospection documentation, providing knowledge-sharing to other team members.</p>
+           </article>
+        </div>
+
+
+        <div id = "work_exp_2">
+           <article class="section2Content">
+             <h3 class="sectionContentTitle">Response Center Specialist</h3>
+             <h4 class="sectionContentSubTitle">Remote DBA Experts LLC</h4>
+             <h5 class="sectionContentSubTitle">April 2014 - Dec. 2014</h5>
+             <p class="sectionContent">Utilized database tools and techniques to build code, test, and troubleshoot programs and databases, correcting errors and making necessary modifications.</p>
+             <p class="sectionContent">Proposed, developed, and implemented database administration policies, standards, and guidelines to improve database administration operations.</p>
+             <p class="sectionContent">Installed and performed repairs to hardware, software, and peripheral equipment.</p>
+             <p class="sectionContent">Read technical manuals, conferred with users, and conducted computer diagnostics to provide technical assistance and support.</p>
+             <p class="sectionContent">Utilized best practices in case handling, customer follow-up, documented interactions, and work performed.</p>
+             <p class="sectionContent">Monitored database performance and capacity planning</p>
+             <p class="sectionContent">Maintained working knowledge of database concepts, including procedures, functions, views, keys, and indexes.</p>
+           </article>
+        </div>
+
+
+</body>
+
+</html>
