@@ -221,6 +221,23 @@
   top: 690px;
 }
 
+#show{
+  position: absolute;
+  left: 1100px;
+  top: 250px;
+}
+
+#hide{
+  position: absolute;
+  left: 1270px;
+  top: 250px;
+}
+
+#work_cat{
+  position: absolute;
+  left: 1150px;
+  top: 230px;
+}
 
 
 
@@ -233,10 +250,12 @@
 
 
 <!--slidding animation-->
+
+<!--
 <script type="text/javascript">
     $(document).ready(function() {
       function rgt() {
-        $('#sldr').animate({ left: "1000" }, 10000, hider);
+        $('#sldr').animate({ left: "1000" }, 100000, hider);
         }
         rgt();
         function hider(){
@@ -246,19 +265,23 @@
     });
 
 </script>
+-->
+
 <!--slidding animation-->
 <script>
     $(document).ready(function(){
       $("#hide").click(function(){
-        $("#sldr").hide();
+        $("#work_cat").hide();
       });
       $("#show").click(function() {
-        $("#sldr").show();
+        $("#work_cat").show();
       });
     });
 </script>
 
+
 <!--enlarge/reduce-->
+<!--
 <script>
   $("button#enlarge").on("click", function(){
     $("p.enlargeable").addClass("big");
@@ -268,11 +291,13 @@
       });
 
 </script>
+-->
 
 </head>
 <body>
 <header>
   <section class="profileHeader">
+
 
     <!--Navigation Start-->
      <div class="custom-padding">
@@ -288,6 +313,16 @@
         </nav>
       </div>
          <!--Navigation End-->
+
+         <button id="show">Start Working</button>
+         <button id="hide">Stop Working</button>
+
+          <form id="form1" runat="server">
+            <div>
+            <img id="work_cat" src="https://i.postimg.cc/mk2ndvfZ/workimage.gif" style="width:200px;height:200px" />
+            </div>
+          </form>
+
 
          <div id = "intro">
           <section class="section2">
