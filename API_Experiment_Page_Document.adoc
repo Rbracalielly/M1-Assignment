@@ -1,0 +1,46 @@
+
+# API Experiment Page (APIExperiment.html)
+
+:imagesdir: images
+
+## What is this Page? 
+This is a page where anyone viewing the page can use the search option to search the New York Times and pull the top 3 from the New Your Times Api. 
+
+## Navigation Bar 
+- Home
+  Week 1 and 2 of Advanced Programming: OAON SP19
+- Work Exp
+  Added page to show Ryan Bracalielly' various work experience.  
+- portfolio.html 
+  Week three of Advanced Programming: OAON SP19, lesson on creating a professional looing portfolio page. Also show off the code used in   the project 
+- Contact Info
+  Page containing contact information on Ryan Bracalielly
+- APIExperiment.html
+  This is a lesson in calling an API to an HTML page 
+  
+## Page Information
+- Images 
+  N/A
+- Input Text
+  This will take the input from the user and pass it into an call out to the New York Times APi
+- Buttons
+  Search Button that when click will use the information typed input text 
+  Drop down button containing class information 
+- Text 
+  Text appears after the user adds clicks the search button. Text will show 3 articles from the New York Time with the headlines, snippet, and lead paragraph
+
+## Issues
+- All issues can be found in the Issues document
+
+## Programming Languages used 
+- HTML, CSS, jQuery, 
+- Note New Your Times API call requires an API Key which Ryan Brcalielly has.
+
+## GIT Branch Strategy 
+
+image::GIT_Branch_Strat.png[alt=branch_strategy,width=550px][orientation=portrait]
+
+## implantation Strategy
+
+image::Implementation.png[alt=implementation,width=500px][orientation=portrait]
+
