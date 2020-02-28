@@ -133,7 +133,28 @@ p {
 
 
 h1 {
-    color: white;
+  color: white;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h2 {
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h3 {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 #search_button{
@@ -156,21 +177,115 @@ h1 {
   padding-right: 10px;
 }
 
-
-#demo1{
+#headline{
   position: absolute;
-  left: 200px;
+  left: 400px;
+  top: 150px;
+  padding-right: 10px;
+}
+
+#snippet{
+  position: absolute;
+  left: 400px;
+  top: 200px;
+  padding-right: 10px;
+}
+
+#lead_paragraph{
+  position: absolute;
+  left: 400px;
+  top: 250px;
+  padding-right: 10px;
+}
+
+#headline_2{
+  position: absolute;
+  left: 400px;
+  top: 300px;
+  padding-right: 10px;
+}
+
+#snippet_2{
+  position: absolute;
+  left: 400px;
+  top: 350px;
+  padding-right: 10px;
+}
+
+#lead_paragraph_2{
+  position: absolute;
+  left: 400px;
   top: 400px;
   padding-right: 10px;
 }
 
+#headline_3{
+  position: absolute;
+  left: 400px;
+  top: 450px;
+  padding-right: 10px;
+}
 
+#snippet_3{
+  position: absolute;
+  left: 400px;
+  top: 500px;
+  padding-right: 10px;
+}
+
+#lead_paragraph_3{
+  position: absolute;
+  left: 400px;
+  top: 550px;
+  padding-right: 10px;
+}
+
+#demo1{
+  position: absolute;
+  left: 200px;
+  top: 300px;
+  padding-right: 10px;
+}
 
 </style>
 <!--formating CSS end-->
 
 <!--jQuery Code-->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script>
+function nytApiFunction() {
+  var x = document.getElementById("input_text").value;
+
+  var urlbase = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="
+  var apikey = "&api-key=ngAuSZBToKWbflCjzZFyXn13GNkGrsUe"
+  var url = urlbase+x+apikey;
+
+  //for troubleshooting
+  //document.getElementById("demo1").innerHTML = url;
+
+  $.ajax({
+    url: url,
+    method: 'GET',
+  }).done(function(result) {
+    console.log(result);
+        document.getElementById("headline").innerHTML = result.response.docs["0"].headline.main;
+        document.getElementById("snippet").innerHTML = result.response.docs["0"].snippet;
+        document.getElementById("lead_paragraph").innerHTML = result.response.docs["0"].lead_paragraph;
+
+        document.getElementById("headline_2").innerHTML = result.response.docs["1"].headline.main;
+        document.getElementById("snippet_2").innerHTML = result.response.docs["1"].snippet;
+        document.getElementById("lead_paragraph_2").innerHTML = result.response.docs["1"].lead_paragraph;
+
+        document.getElementById("headline_3").innerHTML = result.response.docs["2"].headline.main;
+        document.getElementById("snippet_3").innerHTML = result.response.docs["2"].snippet;
+        document.getElementById("lead_paragraph_3").innerHTML = result.response.docs["2"].lead_paragraph;
+  }).fail(function(err) {
+    throw err;
+  });
+}
+
+</script>
 
 <!--Navigation Start-->
 <div class="custom-padding">
@@ -197,23 +312,22 @@ h1 {
 
   <button type="button" id="search_button" onclick="nytApiFunction()">Search</button>
 
-  <p id="demo"></p>
   <p id="demo1"></p>
 
-<script>
-function nytApiFunction() {
-  var x = document.getElementById("input_text").value;
+  <h1 id ="headline"></h1>
+  <h2 id ="snippet"></h2>
+  <h3 id ="lead_paragraph"></h3>
 
-  //for troubleshooting
-  //document.getElementById("demo").innerHTML = x;
+  <h1 id ="headline_2"></h1>
+  <h2 id ="snippet_2"></h2>
+  <h3 id ="lead_paragraph_2"></h3>
 
-  var urlbase = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="
-  var apikey = "&api-key=ngAuSZBToKWbflCjzZFyXn13GNkGrsUe"
-  var url = urlbase+x+apikey;
+  <h1 id ="headline_3"></h1>
+  <h2 id ="snippet_3"></h2>
+  <h3 id ="lead_paragraph_3"></h3>
 
-  //for troubleshooting
-  document.getElementById("demo1").innerHTML = url;
 
+<!--
   function setup() {
     noCanvas();
     loadJSON(url, getData);
@@ -232,15 +346,4 @@ function nytApiFunction() {
 
 
     }
-}
-
-  </script>
-
-
-
-
-
-</body>
-
-
-</html>
+-->
