@@ -1,0 +1,46 @@
+# Work exp (workexp.html)
+
+:imagesdir: images
+
+## What is this Page? 
+This is a simple page of mostly going through Ryan Bracalielly's work experience and background in IT. 
+
+## Navigation Bar 
+- Home
+  Week 1 and 2 of Advanced Programming: OAON SP19
+- Work Exp
+  Added page to show Ryan Bracalielly' various work experience.  
+- portfolio.html 
+  Week three of Advanced Programming: OAON SP19, lesson on creating a professional looing portfolio page. Also show off the code used in   the project 
+- Contact Info
+  Page containing contact information on Ryan Bracalielly
+- APIExperiment.html
+  This is a lesson in calling an API to an HTML page 
+
+## Page Information
+- Images 
+  Contains 1 image of an animated cat
+- Buttons
+  Buttons to hide or show the animated cat mentioned above 
+- Text 
+  Contains the following information on Ryan Bracalielly's work experince.
+    Background
+    Technical Knowledge
+    Education
+    Technical Support Engineer Level 3
+    Response Center Specialist
+    
+## Issues
+- All issues can be found in the Issues document
+
+## Programming Languages used 
+- HTML, CSS, jQuery
+
+## GIT Branch Strategy 
+
+image::GIT_Branch_Strat.png[alt=branch_strategy,width=550px][orientation=portrait]
+
+## implantation Strategy
+
+image::Implementation.png[alt=implementation,width=500px][orientation=portrait]
+
