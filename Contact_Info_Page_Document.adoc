@@ -1,0 +1,45 @@
+Contact_Info_Page_Document.adoc
+
+# Contact Info (contactme.html)
+
+:imagesdir: images
+
+## What is this Page? 
+This is a simpe page of mostly text with the contact information of Ryan Bracalielly
+
+## Navigation Bar 
+- Home
+  Week 1 and 2 of Advanced Programming: OAON SP19
+- Work Exp
+  Added page to show Ryan Bracalielly' various work experience.  
+- portfolio.html 
+  Week three of Advanced Programming: OAON SP19, lesson on creating a professional looing portfolio page. Also show off the code used in   the project 
+- Contact Info
+  Page containing contact information on Ryan Bracalielly
+- APIExperiment.html
+  This is a lesson in calling an API to an HTML page 
+  
+## Page Information
+- Text 
+  Contains enail addresses for Ryan Bracalielly. 
+  Personal Email: rbracalielly@gmail.com
+  Student Email: rbrac@pointpark.edu
+- Links
+  Contains links to other Ryan Bracalielly sites. 
+  https://www.linkedin.com/in/ryan-bracalielly/
+  https://github.com/Rbracalielly/
+
+## Issues
+- All issues can be found in the Issues document
+
+## Programming Languages used 
+- HTML, CSS, jQuery
+
+## GIT Branch Strategy 
+
+image::GIT_Branch_Strat.png[alt=branch_strategy,width=550px][orientation=portrait]
+
+## implantation Strategy
+
+image::Implementation.png[alt=implementation,width=500px][orientation=portrait]
+
