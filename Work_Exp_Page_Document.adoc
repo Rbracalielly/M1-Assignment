@@ -21,7 +21,7 @@ This is a simple page of mostly going through Ryan Bracalielly's work experience
 - Images 
   Contains 1 image of an animated cat
 - Buttons
-  Buttons to hide or show the animated cat mentioned above 
+  N/A 
 - Text 
   Contains the following information on Ryan Bracalielly's work experince.
     Background
